@@ -4,42 +4,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      background-color: rgb(252, 252, 252);
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    /* Top Section */
+    .top-section {
+      background-color: #fde7f0;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .top-section h3 {
+      color: #880e4f;
+      font-style: italic;
+    }
+
+    .top-section p {
+      color: #ae938a;
+      font-size: 18px;
+    }
+
+    /* Bottom Section */
+    .bottom-section {
+      background-color: #333333;
+      color: #fce4ec;
+      padding: 40px;
+    }
+
+    .bottom-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .box {
+      background-color: #ae938a;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 280px;
+    }
+
+    .box h3 {
+      color: #f8bbd0;
+    }
+
+    .box label {
+      color: #f8bbd0;
+      font-weight: bold;
+    }
+
+    .box input, .box textarea {
+      width: 90%;
+      padding: 6px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      border: none;
+    }
+
+    .button {
+      background-color: #ad1457;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: rgb(252, 252, 252); font-family: Arial, sans-serif; margin: 0;">
+<body>
 
   <!-- Top Section -->
-  <div style="background-color: #fde7f0; text-align: center; padding: 40px;">
-    <h3 style="color: #880e4f; font-style: italic;">Frequently Asked Questions (FAQs)</h3>
-    <p style="color: #ae938a; font-size: 18px;">Visit here to see the most commonly asked questions</p>
-    <button style="background-color: #ad1457; color: white; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer;">Visit FAQ</button>
+  <div class="top-section">
+    <h3>Frequently Asked Questions (FAQs)</h3>
+    <p>Visit here to see the most commonly asked questions</p>
+    <!-- Inline CSS for this button -->
+    <button style="background-color: #c2185b; color: yellow; padding: 12px 25px; border-radius: 8px; border: 2px solid #880e4f; cursor: pointer;">
+      Visit FAQ
+    </button>
   </div>
 
   <!-- Bottom Section -->
-  <div style="background-color: #333333; color: #fce4ec; padding: 40px;">
-    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; max-width: 1200px; margin: 0 auto;">
+  <div class="bottom-section">
+    <div class="bottom-container">
       
       <!-- Left Side -->
-      <div style="background-color: #ae938a; padding: 20px; border-radius: 10px; min-width: 280px;">
-        <h3 style="color: #f8bbd0;">Submit Support Ticket</h3>
+      <div class="box">
+        <h3>Submit Support Ticket</h3>
 
-        <label style="color: #f8bbd0; font-weight: bold;">First Name:</label><br>
-        <input type="text" placeholder="Enter your first name" style="width: 90%; padding: 6px; border-radius: 5px; margin-bottom: 15px;"><br>
+        <label>First Name:</label><br>
+        <input type="text" placeholder="Enter your first name"><br>
 
-        <label style="color: #f8bbd0; font-weight: bold;">Last Name:</label><br>
-        <input type="text" placeholder="Enter your last name" style="width: 90%; padding: 6px; border-radius: 5px; margin-bottom: 15px;"><br>
+        <label>Last Name:</label><br>
+        <input type="text" placeholder="Enter your last name"><br>
 
-        <label style="color: #f8bbd0; font-weight: bold;">Email:</label><br>
-        <input type="email" placeholder="Enter your email" style="width: 90%; padding: 6px; border-radius: 5px; margin-bottom: 15px;"><br>
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br>
 
-        <label style="color: #f8bbd0; font-weight: bold;">Message:</label><br>
-        <textarea rows="4" style="width: 90%; padding: 6px; border-radius: 5px;"></textarea>
+        <label>Message:</label><br>
+        <textarea rows="4"></textarea>
       </div>
 
       <!-- Right Side -->
-      <div style="background-color: #ae938a; padding: 20px; border-radius: 10px; min-width: 280px;">
-        <h3 style="color: #f8bbd0;">Live Chat</h3>
+      <div class="box">
+        <h3>Live Chat</h3>
         <p>Need quick help with a technical issue or payment problem? Click here for immediate support.</p>
-        <button style="background-color: #ad1457; color: white; padding: 10px 20px; border-radius: 6px; border: none; cursor: pointer;">Start Chat</button>
+        <button class="button">Start Chat</button>
       </div>
 
     </div>
